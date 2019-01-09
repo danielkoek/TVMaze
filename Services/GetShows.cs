@@ -25,7 +25,7 @@ namespace Services
         {
             foreach (var show in shows)
             {
-                show.Casts=show.Casts.SortedOnBirthDay();
+                show.Cast=show.Cast.SortedOnBirthDay();
             }
         }
     }

@@ -49,7 +49,7 @@ namespace TV.Maze.Collector
             var shows = new List<Show>();
             foreach (var s in showsDtoList)
             {
-                shows.Add(new Show {Casts = await GetCastMembersAsync(s), Id = s.Id, Name = s.Name});
+                shows.Add(new Show {Cast = await GetCastMembersAsync(s), Id = s.Id, Name = s.Name});
             }
 
             return shows;
