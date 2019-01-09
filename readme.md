@@ -1,10 +1,12 @@
-Pre-requirements:
+<b>Pre-requirements:</b>
+
 ElasticSearch, easiest and quickest way is:
 docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.4
 
 docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.4
 
-Functional:
+<b>Functional:</b>
+
 Atm not using a config file, just for convenience of local debugging, console app is easily deployable with docker in the future.
 
 The collector will first grab all the shows using paging, since this is cached we will fly through this very quickly and get no penalty
